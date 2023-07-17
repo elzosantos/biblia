@@ -11,7 +11,7 @@ class TestamentoController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    { 
+    {
         return Testamento::all();
     }
 
@@ -41,7 +41,7 @@ class TestamentoController extends Controller
             $response = [
                 'testamento' => $testamento,
                 'livros' => $testamento->livros
-        
+
             ];
 
             return $testamento;
